@@ -1,5 +1,5 @@
 {% set name = "jless" %}
-{% set version = "0.7.2" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/PaulJuliusMartinez/jless/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 5d776cb6488743ccdaeeffb4bfc54d84862028170cee852a8bb5c156526ed263
+  sha256: 3f1168c9b2432f7f4fa9dd3c31b55e371ef9d6f822dc98a8cdce5318a112bf2d
 
 build:
   skip: true  # [win]
@@ -18,6 +18,9 @@ requirements:
     - {{ compiler('c') }}        # [not win]
     - {{ compiler('rust') }}
     - cargo-bundle-licenses
+    - libxcb
+  run:
+    - libxcb
 
 test:
   commands:
@@ -30,7 +33,7 @@ about:
   license_file:
     - LICENSE
     - THIRDPARTY.yml
-  summary: 'A command-line JSON viewer'
+  summary: A command-line JSON viewer
   description: |
     A JSON viewer which replaces whatever combination of less, jq, cat and your editor
     you currently use for viewing JSON files.
