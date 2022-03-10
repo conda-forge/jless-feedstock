@@ -19,6 +19,8 @@ requirements:
     - {{ compiler('rust') }}
     - cargo-bundle-licenses
     - libxcb
+  run:
+    - libxcb
 
 test:
   commands:
