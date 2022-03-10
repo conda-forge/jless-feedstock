@@ -18,6 +18,7 @@ requirements:
     - {{ compiler('c') }}        # [not win]
     - {{ compiler('rust') }}
     - cargo-bundle-licenses
+    - libxcb
 
 test:
   commands:
