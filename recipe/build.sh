@@ -2,6 +2,10 @@
 
 set -ex
 
+if [[ "${target_platform}" == "osx-64" ]]; then
+    export RUSTFLAGS="-C link-arg=-mmacosx-version-min=10.9"
+fi
+
 cargo-bundle-licenses \
     --format yaml \
     --output THIRDPARTY.yml
