@@ -35,8 +35,8 @@ about:
     - THIRDPARTY.yml
   summary: A command-line JSON viewer
   description: |
-    A JSON viewer which replaces whatever combination of less, jq, cat and your editor
-    you currently use for viewing JSON files.
+    A JSON viewer which replaces whatever combination of less, jq, cat and your
+    editor for viewing JSON files.
 
 extra:
   recipe-maintainers:
