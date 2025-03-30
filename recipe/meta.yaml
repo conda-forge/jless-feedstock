@@ -10,13 +10,13 @@ source:
   sha256: 43527a78ba2e5e43a7ebd8d0da8b5af17a72455c5f88b4d1134f34908a594239
 
 build:
-  skip: true  # [win]
-  number: 0
+  number: 1
 
 requirements:
   build:
-    - {{ compiler('c') }}        # [not win]
-    - {{ compiler('rust') }}
+    - {{ compiler("rust") }}
+    - {{ compiler("c") }}
+    - {{ stdlib("c") }}
     - cargo-bundle-licenses
     - libxcb
   run:
