@@ -9,8 +9,8 @@ Package license: MIT
 
 Summary: A command-line JSON viewer
 
-A JSON viewer which replaces whatever combination of less, jq, cat and your editor
-you currently use for viewing JSON files.
+A JSON viewer which replaces whatever combination of less, jq, cat and your
+editor for viewing JSON files.
 
 
 Current build status
@@ -63,13 +63,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15597&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jless-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15597&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jless-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
                 </a>
               </td>
             </tr>
